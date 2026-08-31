@@ -1,18 +1,132 @@
-<h1>informátca<h1>
-<p>quero falar um pouco do que eu sei sobre a informática e pesnar em trabalhar com isso noo futuro</p>
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
-       <h1>Meu blog tech</h1>
-       <p>Explicarei como eu tive interesse na área de T.I</p>
 
-        
-     </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog de Informática</title>
+
+    <style>
+        body {
+            background-color: #eef2ff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #312e81;
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #a5b4fc;
+        }
+
+        main {
+            background-color: #ffffff;
+            color: #1e293b;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .artigo-autor {
+            color: #6366f1;
+        }
+
+        button {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3730a3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Blog de Informática</h1>
+
+        <p>
+            Um pouco sobre o que estou aprendendo e o quanto gosto de informática.
+        </p>
+    </header>
+
+    <main>
+        <img src="imagem-blog.png"
+            alt="Imagem representando tecnologia e informática">
+
+        <div>
+            <h2>Minha experiência com a informática</h2>
+
+            <p class="artigo-autor">Por: Lais.</p>
+
+            <p>
+                Eu gosto muito de informática porque é uma área que sempre
+                desperta a minha curiosidade. Acho muito interessante entender
+                como os computadores funcionam e como a tecnologia está presente
+                em tantas coisas do nosso dia a dia.
+            </p>
+
+            <p>
+                Durante meus estudos, comecei a aprender sobre programação,
+                HTML, CSS e JavaScript. No começo algumas coisas pareciam
+                difíceis, mas fui praticando e entendendo aos poucos. Aprender
+                a criar páginas e fazer o código funcionar é algo que me deixa
+                muito interessada em continuar estudando.
+            </p>
+
+            <p>
+                Ainda tenho muito para aprender, mas gosto de descobrir coisas
+                novas e tentar colocar meus conhecimentos em prática. Pretendo
+                continuar aprendendo sobre informática e programação, porque
+                acredito que essa área pode me proporcionar muitas oportunidades
+                no futuro.
+            </p>
+
+            <button>
+                Like <span>0</span>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        const botao = document.querySelector("button");
+
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            console.log("Fui clicado!");
+
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    </script>
+
+</body>
+
 </html>
